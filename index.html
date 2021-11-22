@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b19357f67a.js" crossorigin="anonymous"></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+    <div id="top">
+        <p class="splitter">
+            SPLI
+        </p>
+        <p class="splitter" id="splitter">
+            TTER
+        </p>
+    </div>
+    <div id="maincontent">
+        <div id="input">
+            <form action="">
+                <label for="bill">Bill</label>
+                <div class="billwithicon">
+                    <input type="number" name="bill" id="bill" value="0">
+                    <i class="fas fa-dollar-sign icon1"></i>
+                </div>
+                <label for="selectTip">Select Tip %</label>
+                <div class="container1">
+                    <button class="item1">5%</button>
+                    <button class="item1">10%</button>
+                    <button class="item1">15%</button>
+                    <button class="item1">25%</button>
+                    <button class="item1">50%</button>
+                    <input type="number1" class="item1" name="" id="custom" value="Custom">
+                </div>
+                <label for="nop">Number of People <p class="redError">Cant be zero</p></label>
+                <!-- <p class="redError">Cant be zero</p> -->
+                <div class="billwithicon">
+                <i class="fas fa-user icon2"></i>
+                <input type="number" name="nop" id="nop" value="0">
+            </div>
+            </form>
+        </div>
+        <div id="output">
+            <!-- html for right portion -->
+            <div class="bigsection">
+                <div class="section1">
+                    <div>Tip Amount
+                        <p class="person">/ person</p>
+
+                    </div>
+
+                    <p class="values">$4.27</p>
+                </div>
+                <div class="section2">
+                    <div>Total
+                        <p class="person">/ person</p>
+                    </div>
+                    <p class="values">$32.79</p>
+                </div>
+            </div>
+
+            <div class="section3">
+                <button>
+                    RESET
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
