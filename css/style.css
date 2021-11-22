@@ -144,9 +144,10 @@ input[type="number"] {
 #nop{
     margin-bottom: 0%;
 }
-.redError{
+#redError{
     padding-left: 26%;
     display: none;
+    color: red;
     margin: 0;
 }
 /* for the right part giving the output */
