@@ -3,7 +3,6 @@ body{
     background:  hsl(185, 41%, 84%);
     overflow: hidden;
     padding: 5% 14%;
-    /* margin: 0; */
 }
 #top p{
     text-align: center;
@@ -22,7 +21,6 @@ body{
 }
 /* for the central main white portion */
 #maincontent{
-    /* border: 2px solid red; */
     border-radius: 10px;
     display: flex;
     background-color: white;
@@ -31,9 +29,7 @@ body{
 /* for the left part taking the input */
 
 #input{
-    /* border: 2px solid rgb(125, 5, 238); */
     padding: 24px 36px;
-    /* box-sizing: border-box; */
     width: 60%;
 }
 #input label{
@@ -43,7 +39,7 @@ body{
 
 /* for all the precentage buttons */
 .container1{
-    /* border: 2px solid blue; */
+    /* DOES NOT KNOW WHY CSS GRID DID NOT WORKED HERE */
     /* display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
     grid-gap: 17px; */
@@ -87,6 +83,7 @@ body{
     cursor: pointer;
 }
 /* targeting all the input spaces */
+/* Removed the up/down button in the input field */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -95,6 +92,8 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
   }
+
+  /* styling of input boxes */
 input[type = "number"]{
     color: hsl(183, 100%, 15%);
     outline: none;
@@ -152,9 +151,8 @@ input[type="number"] {
 }
 /* for the right part giving the output */
 
-/* In the three divs and also in their parent div, in the output part, I applied display: flex and justify-content: space-between, which is the most important part */
+/* In the three divs and also in their parent div (of the output part), I applied display: flex and justify-content: space-between, which is the most important part */
 #output{
-    /* border: 2px solid royalblue; */
     font-family: 'Space Mono', monospace;
     border-radius: 10px;
     width: 60%;
